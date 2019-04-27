@@ -2,10 +2,10 @@
 #define __MAIN_H
 
 /* 类型重定义 */
-#define u8  unsigned char       // 一个字节  8 位
-#define u16 unsigned int        // 两个字节 16 位
-#define u32 unsigned long       // 四个字节 32 位
-                                // 另外 unsigned short 也是 16 位
+#define u8 unsigned char  // 一个字节  8 位
+#define u16 unsigned int  // 两个字节 16 位
+#define u32 unsigned long // 四个字节 32 位 \
+                          // 另外 unsigned short 也是 16 位
 
 /* 电子表工作模式枚举 */
 enum display_mode
@@ -26,15 +26,15 @@ enum display_mode
 /* 数码管显示/闪烁枚举 */
 enum flicker_state
 {
-        flicker_off = 0,        // 数码管常亮显示
-        flicker_on = 1          // 数码管闪烁显示
+        flicker_off = 0, // 数码管常亮显示
+        flicker_on = 1   // 数码管闪烁显示
 };
 
 /* 数码管符号点亮/熄灭枚举 */
 enum symbol_state
 {
-        symbol_off = 0,         // 数码管符号点亮
-        symbol_on = 1           // 数码管符号熄灭
+        symbol_off = 0, // 数码管符号点亮
+        symbol_on = 1   // 数码管符号熄灭
 };
 
 #endif /* __MAIN_H */

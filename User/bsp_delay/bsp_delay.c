@@ -7,9 +7,9 @@
  */
 void delay_us(u32 t)
 {
-        u32 i;
-        for(i = t / 4; i > 0; i--)
-                _nop_();
+    u32 i;
+    for (i = t / 4; i > 0; i--)
+        _nop_();
 }
 
 /** 
@@ -18,7 +18,7 @@ void delay_us(u32 t)
  */
 void delay_ms(u32 t)
 {
-        u32 i;
-        for(i = t / 5; i > 0; i--)
-                delay_us(1000);
+    u32 i;
+    for (i = t / 5; i > 0; i--)
+        delay_us(1000);
 }

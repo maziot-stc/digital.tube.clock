@@ -4,7 +4,7 @@
 #include "main.h"
 #include "reg52.h"
 
-sbit DQ = P3^7;
+sbit DQ = P3 ^ 7;
 
 void delay(u16 i);
 u8 ds18b20_init(void);
