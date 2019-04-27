@@ -1,10 +1,6 @@
 ﻿# 这是Git的忽略文件
 
-# 忽略Circuit目录下除了匹配*.pdsprj格式的其他文件
-Circuit/Proteus/*
-!/Circuit/Proteus/*.dsn
-!/Circuit/Proteus/*.md
-
+### Keil C51
 # 忽略Listing下所有文件
 /Listing/*
 
@@ -15,3 +11,12 @@ Circuit/Proteus/*
 /Project/*
 !/Project/*.uvopt
 !/Project/*.uvproj
+
+### Proteus
+# 忽略Circuit目录下除了匹配*.dsn、*.pdsprj和*.md格式的其他文件
+Circuit/Proteus7/*
+!/Circuit/Proteus7/*.dsn
+!/Circuit/Proteus7/*.md
+Circuit/Proteus8/*
+!/Circuit/Proteus8/*.pdsprj
+!/Circuit/Proteus8/*.md
